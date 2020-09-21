@@ -1,0 +1,124 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Colorlib Templates">
+		<meta name="author" content="Colorlib">
+		<meta name="keywords" content="Colorlib Templates">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script type="javascript">
+			var player = document.getElementById("player");
+			function play() {
+				if(player) {
+					player.playVideo();
+				}
+			}
+		</script>
+		
+		<style>
+			.jumbotron {
+			  background-size: cover;
+			  padding-top: 1%;
+			  padding-bottom: 1%;
+			}
+		</style>
+	</head>
+
+	<body>
+	<div class="jumbotron" style="background:#0077b6 !important">
+		<h1 class="display-4">List of Job Applicants</h1>
+	</div>
+
+	    <!-- <div class="page-wrapper bg-dark p-t-100 p-b-50"> -->
+        <!-- <div class="wrapper wrapper--w900"> -->
+            <!-- <div class="card card-6"> -->
+                <!-- <div class="card-heading"> -->
+                    <!-- <h2 class="title">List of Job Applicants</h2> -->
+                <!-- </div> -->
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Name</th>
+							<th scope="col">Email</th>
+							<th scope="col">Resume Attached?</th>
+							<th scope="col">Video Resume Attached?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-success">
+							<th scope="row" class = 'col-md-4 success'>1</th>
+							<td class = 'col-md-3 success'>Keerthi Kumar N</td>
+							<td class = 'col-md-3 success'>keerthi@test.com</td>
+							<td class = 'col-md-3 success'>Yes
+								<a href="#">
+								  <span class="glyphicon glyphicon-download-alt"></span>
+								</a>
+							</td>
+							<td class = 'col-md-4 success'>
+								Yes
+								<a href="https://www.youtube.com/watch?v=dIvCh9-xJv4" onclick="playVideo()" id="player">
+								  <span class="glyphicon glyphicon-play-circle" id="player"></span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" class = 'col-md-4 success'>2</th>
+							<td class = 'col-md-4 success'>Vineeth Kumar</td>
+							<td class = 'col-md-4 success'>vineeth@test.com</td>
+							<td class = 'col-md-4 success'>No</td>
+							<td class = 'col-md-4 success'>
+								Yes
+								<a href="#">
+								  <span class="glyphicon glyphicon-play-circle"></span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Raghav Nayak</td>
+							<td>raghav@test.com</td>
+							<td>Yes
+								<a href="#">
+								  <span class="glyphicon glyphicon-download-alt"></span>
+								</a>
+							</td>
+							<td>No</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td>Gautam</td>
+							<td>gautam@test.com</td>
+							<td>Yes
+								<a href="#">
+								  <span class="glyphicon glyphicon-download-alt"></span>
+								</a>
+							</td>
+							<td>No</td>
+						</tr>
+						<tr class="bg-success" background-color="green">
+							<th scope="row" class = 'col-md-4 success'>5</th>
+							<td class = 'col-md-4 success'>Manoj Kumar</td>
+							<td class = 'col-md-4 success'>manoj@test.com</td>
+							<td class = 'col-md-3 success'>Yes
+								<a href="#">
+								  <span class="glyphicon glyphicon-download-alt"></span>
+								</a>
+							</td>
+							<td class = 'col-md-4 success'>
+								Yes
+								<a href="#">
+								  <span class="glyphicon glyphicon-play-circle"></span>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			<!-- </div> -->
+		<!-- </div> -->
+	<!-- </div> -->
+
+	</body>
+</html>
